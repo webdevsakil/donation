@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+h1 {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: capitalize;
+}
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #121212;
+}
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+a{
+    text-decoration: none;
+}
+.relative{
+    position: relative;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* color */
+.gray {
+    color: #707070;
+}
+/* flex */
+.d-flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+.col-6{
+    flex-basis: 50%;
+}
+.col-12{
+    flex-basis: 100%;
+}
+.col-3{
+    flex-basis: 33%;
+}
+.order-1{
+    order: 1;
+}
+.order-0{
+    order: 0;
+}
+/* ul */
+.list-unstyled {
+    list-style-type: none;
+}
+/* margin and padding */
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.pt-130 {
+    padding-top: 130px;
+}
+.pb-130 {
+    padding-bottom: 130px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.pt-110 {
+    padding-top: 110px;
+}
+.pb-110 {
+    padding-bottom: 110px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
+/* button */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    background: #ff5959;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px 16px;
+}
+.btn-border{
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #ff5959;
+    color: #121212;
+    padding: 12px 25px;
+}
+.no-border {
+    border: none;
+}
+/* header */
+.header {
+    height: 670px;
+    width: 100%;
+    background: url("./img/headerbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header{
+    position: relative;
+}
+.header::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: linear-gradient(to right,#121212,rgba(18, 18, 18, 0) );
+
+}
+.h-670 {
+    height: 670px;
+}
+.header .title h1 {
+    color: #fff;
+}
+.header .desc p {
+    color: #fff;
+}
+/* donation */
+#donation .list li {
+    height: 125px;
+    width: 135px;
+    background: #fafafa;
+    color: #707070;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+}
+.active {
+    border: 2px solid #ff5959;
+    background: #ffeeee;
+    color: #ff5959 !important;
+}
+.form {
+    max-width: 500px;
+    margin: auto;
+}
+.form input {
+    width: 100%;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+input[type=text]::placeholder {
+    text-transform: capitalize;
+    color: #b3b3b3;
+    font-size: 18px;
+}
+input:focus {
+    outline: none;
+}
+input[type=email]{
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+}
+input[type=email]::placeholder{
+   text-transform: uppercase;
+}
+.form button {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+/* card */
+.card {
+    padding: 45px 20px;
+    margin: 0px 12px;
+    border-radius: 5px;
+}
+.card-wrapper .col-3:nth-child(1) .card {
+    background: rgba(79, 157, 166, 0.1);
+}
+.card-wrapper .col-3:nth-child(2) .card {
+    background: rgba(255, 89, 89, 0.1);
+}
+.card-wrapper .col-3:nth-child(3) .card {
+    background: #fff4d6;
+}
+.card .card-icon {
+    margin-bottom: 20px;
+}
+.card-body h5 {
+    font-size: 24px;
+    color: #121212;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.card-body p {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* blog */
+.blog{
+    padding-right: 40px;
+}
+.title h4{
+    font-size: 45px;
+    font-weight: 700;
+    color: #121212;
+}
+#blog-area .blog .desc p{
+    color: #707070;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+/* blog */
+.blog-card{
+   box-shadow: 2px 2px 4px 3px #7070703a;
+   padding: 20px;
+   border-radius: 5px;
+   margin: 0px 10px;
+}
+.card-header a img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}
+.category{
+    display: inline-block;
+    text-transform: capitalize;
+    color: #ff5959;  
+}
+.title a h4{
+    font-size: 22px;
+}
+.card-body{
+    padding-bottom: 20px;
+}
+/* subscribe area */
+.subscribe-area{
+    padding: 75px;
+    background:#FFF4D6;
+    height: 200px;
+    max-width: 800px;
+    margin: auto;
+}
+.subscribe-area form{
+    max-width: 500px;
+    margin: auto;
+}
+.subscribe-area form input{
+   height: 50px;
+}
+.subscribe-area form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 130px;
+    display: inline-block;
+    background: #ff5959;
+    border: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+/* footer */
+footer{
+    padding: 50px 0px;
+    background: #121212;
+}
+footer h5{
+    color: #ff5959;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ff595956;
+}
+footer p{
+    color: #fff;
+    font-size: 14px;
+}
